@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+  <rect width="200" height="120" fill="#012169"/>
+  <polygon points="0,0 80,48 0,96" fill="#ffffff"/>
+  <polygon points="200,0 120,48 200,96" fill="#ffffff"/>
+  <polygon points="0,0 60,48 0,72 40,48" fill="#c8102e"/>
+  <polygon points="200,0 140,48 200,72 160,48" fill="#c8102e"/>
+  <polygon points="0,120 60,72 0,48 40,72" fill="#c8102e"/>
+  <polygon points="200,120 140,72 200,48 160,72" fill="#c8102e"/>
+  <line x1="0" y1="0" x2="200" y2="120" stroke="#ffffff" stroke-width="24"/>
+  <line x1="200" y1="0" x2="0" y2="120" stroke="#ffffff" stroke-width="24"/>
+  <line x1="0" y1="0" x2="200" y2="120" stroke="#c8102e" stroke-width="8"/>
+  <line x1="200" y1="0" x2="0" y2="120" stroke="#c8102e" stroke-width="8"/>
+  <line x1="100" y1="0" x2="100" y2="120" stroke="#ffffff" stroke-width="40"/>
+  <line x1="0" y1="60" x2="200" y2="60" stroke="#ffffff" stroke-width="40"/>
+  <line x1="100" y1="0" x2="100" y2="120" stroke="#c8102e" stroke-width="16"/>
+  <line x1="0" y1="60" x2="200" y2="60" stroke="#c8102e" stroke-width="16"/>
+</svg>

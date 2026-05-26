@@ -1,0 +1,25 @@
+{
+  "name": "Canada",
+  "slug": "canada",
+  "description": "Canada is one of the world's top study destinations, known for its high-quality education, diverse culture, and excellent post-study work opportunities. With world-class universities, affordable tuition, and a welcoming environment, Canada offers international students a pathway to global careers.",
+  "universities": [
+    {
+      "name": "University of Toronto",
+      "course": "Computer Science (BSc)",
+      "description": "One of the world's top-ranked computer science programs with cutting-edge research in AI and machine learning.",
+      "pdfFile": ""
+    },
+    {
+      "name": "University of British Columbia",
+      "course": "Business Administration (BBA)",
+      "description": "UBC's Sauder School of Business offers a globally recognized business program with strong industry connections.",
+      "pdfFile": ""
+    },
+    {
+      "name": "McGill University",
+      "course": "Medicine (MD)",
+      "description": "McGill's Faculty of Medicine is internationally renowned for its research excellence and clinical training.",
+      "pdfFile": ""
+    }
+  ]
+}

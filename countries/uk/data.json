@@ -1,0 +1,25 @@
+{
+  "name": "United Kingdom",
+  "slug": "uk",
+  "description": "The United Kingdom is home to some of the world's oldest and most prestigious universities. With a rich academic tradition, diverse culture, and globally recognized degrees, the UK offers international students an unparalleled educational experience and strong career prospects.",
+  "universities": [
+    {
+      "name": "University of Oxford",
+      "course": "Law (LLB)",
+      "description": "Oxford's Faculty of Law is one of the world's premier law schools, combining centuries of tradition with modern legal scholarship.",
+      "pdfFile": ""
+    },
+    {
+      "name": "Imperial College London",
+      "course": "Engineering (MEng)",
+      "description": "Imperial College is a global leader in engineering education, known for its innovative research and strong industry partnerships.",
+      "pdfFile": ""
+    },
+    {
+      "name": "London School of Economics",
+      "course": "Economics (BSc)",
+      "description": "LSE is one of the world's leading social science institutions, with its economics program ranked among the top globally.",
+      "pdfFile": ""
+    }
+  ]
+}
