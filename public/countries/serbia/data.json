@@ -1,0 +1,31 @@
+{
+  "name": "Serbia",
+  "slug": "serbia",
+  "description": "Serbia is a fast-growing study destination in Southeast Europe, known for its affordable tuition, high-quality education, and vibrant student life. With EU-recognized degrees and English-taught programs, Serbia offers international students excellent value and career opportunities in Europe.",
+  "universities": [
+    {
+      "name": "University of Belgrade",
+      "course": "Medicine (MD)",
+      "description": "The University of Belgrade's Faculty of Medicine is internationally recognized and offers English-taught medical programs with modern clinical training facilities.",
+      "pdfFile": "belgrade-medicine.pdf"
+    },
+    {
+      "name": "University of Novi Sad",
+      "course": "Engineering (BEng)",
+      "description": "A leading technical university in Serbia with strong engineering programs, modern research facilities, and growing international student community.",
+      "pdfFile": "novi-sad-engineering.pdf"
+    },
+    {
+      "name": "Metropolitan University Belgrade",
+      "course": "Information Technology (BSc)",
+      "description": "Specializes in IT and software engineering programs with strong industry connections and modern curriculum aligned with EU standards.",
+      "pdfFile": "metropolitan-it.pdf"
+    },
+    {
+      "name": "University of Niš",
+      "course": "General Medicine (MD)",
+      "description": "The University of Niš Faculty of Medicine offers accredited medical programs with English-medium instruction and modern clinical training at the University Clinical Centre.",
+      "pdfFile": "nis-medicine.pdf"
+    }
+  ]
+}

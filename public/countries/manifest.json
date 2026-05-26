@@ -1,9 +1,19 @@
 {
   "countries": [
     {
+      "slug": "armenia",
+      "name": "Armenia",
+      "description": "Armenia is an emerging study destination offering affordable medical and engineering education. With globally recognized degrees, English-taught programs, and a rich cultural heritage, Armenia provides international students a unique and cost-effective pathway to professional careers."
+    },
+    {
       "slug": "canada",
       "name": "Canada",
       "description": "Canada is one of the world's top study destinations, known for its high-quality education, diverse culture, and excellent post-study work opportunities. With world-class universities, affordable tuition, and a welcoming environment, Canada offers international students a pathway to global careers."
+    },
+    {
+      "slug": "serbia",
+      "name": "Serbia",
+      "description": "Serbia is a fast-growing study destination in Southeast Europe, known for its affordable tuition, high-quality education, and vibrant student life. With EU-recognized degrees and English-taught programs, Serbia offers international students excellent value and career opportunities in Europe."
     },
     {
       "slug": "uk",

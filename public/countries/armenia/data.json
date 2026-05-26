@@ -1,0 +1,13 @@
+{
+  "name": "Armenia",
+  "slug": "armenia",
+  "description": "Armenia is an emerging study destination offering affordable medical and engineering education. With globally recognized degrees, English-taught programs, and a rich cultural heritage, Armenia provides international students a unique and cost-effective pathway to professional careers.",
+  "universities": [
+    {
+      "name": "UTMA",
+      "course": "Medicine (MD)",
+      "description": "UTMA offers comprehensive medical education programs with modern facilities and English-medium instruction.",
+      "pdfFile": "utma-medicine.pdf"
+    }
+  ]
+}
