@@ -24,6 +24,6 @@ export function getCountryPaths(slug: string) {
   return {
     flag: `${base}flag.svg`,
     data: `${base}data.json`,
-    brochure: (filename: string) => `${base}brochures/${filename}`,
+    brochure: (filename: string) => `${base}${filename}`,
   }
 }

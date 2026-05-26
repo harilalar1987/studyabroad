@@ -7,7 +7,13 @@
       "name": "UTMA",
       "course": "Medicine (MD)",
       "description": "UTMA offers comprehensive medical education programs with modern facilities and English-medium instruction.",
-      "pdfFile": "utma-medicine.pdf"
+      "pdfFile": "UTMA Campus.pdf"
+    },
+    {
+      "name": "UTMA Course Booklet",
+      "course": "Program Details & Fees",
+      "description": "Complete course booklet covering all UTMA medical programs, fee structure, and admission requirements.",
+      "pdfFile": "UTMA buklet.pdf"
     }
   ]
 }

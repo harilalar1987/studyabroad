@@ -7,19 +7,19 @@
       "name": "University of Oxford",
       "course": "Law (LLB)",
       "description": "Oxford's Faculty of Law is one of the world's premier law schools, combining centuries of tradition with modern legal scholarship.",
-      "pdfFile": "oxford-law.pdf"
+      "pdfFile": ""
     },
     {
       "name": "Imperial College London",
       "course": "Engineering (MEng)",
       "description": "Imperial College is a global leader in engineering education, known for its innovative research and strong industry partnerships.",
-      "pdfFile": "imperial-engineering.pdf"
+      "pdfFile": ""
     },
     {
       "name": "London School of Economics",
       "course": "Economics (BSc)",
       "description": "LSE is one of the world's leading social science institutions, with its economics program ranked among the top globally.",
-      "pdfFile": "lse-economics.pdf"
+      "pdfFile": ""
     }
   ]
 }

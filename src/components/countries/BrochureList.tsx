@@ -55,24 +55,14 @@ export default function BrochureList({ universities, slug, loading = false }: Pr
           </div>
           <div className="flex gap-3">
             {uni.pdfFile ? (
-              <>
-                <a
-                  href={paths.brochure(uni.pdfFile)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-5 py-2.5 rounded-full bg-navy text-white text-sm font-medium hover:bg-navy-800 transition-colors whitespace-nowrap"
-                >
-                  Download PDF
-                </a>
-                <a
-                  href={paths.brochure(uni.pdfFile)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-5 py-2.5 rounded-full border border-gray-200 text-gray-600 text-sm font-medium hover:border-navy hover:text-navy transition-colors whitespace-nowrap"
-                >
-                  Preview
-                </a>
-              </>
+              <a
+                href={paths.brochure(uni.pdfFile)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2.5 rounded-full bg-navy text-white text-sm font-medium hover:bg-navy-800 transition-colors whitespace-nowrap"
+              >
+                View
+              </a>
             ) : (
               <span className="px-5 py-2.5 rounded-full bg-gray-100 text-gray-400 text-sm font-medium whitespace-nowrap cursor-not-allowed">
                 Coming Soon

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { SITE_NAME, SITE_TAGLINE, CONTACT_EMAIL, CONTACT_WHATSAPP, WHATSAPP_URL, MAILTO_URL, NAV_LINKS } from '../../utils/constants'
 
+const LOGO_PATH = import.meta.env.BASE_URL + 'MAIN%20LOGO.jpeg'
+
 const DESTINATIONS = [
   { name: 'Canada', slug: 'canada' },
   { name: 'United Kingdom', slug: 'uk' },
@@ -23,7 +25,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <h3 className="text-2xl font-changa text-sky-400 mb-4">{SITE_NAME}</h3>
+            <span className="inline-block bg-white/10 backdrop-blur-sm rounded-xl p-2 mb-4">
+              <img
+                src={LOGO_PATH}
+                alt="Altius Study Abroad"
+                className="h-10 w-auto"
+              />
+            </span>
             <p className="text-gray-300 text-sm leading-relaxed mb-6">
               {SITE_TAGLINE}. We help students achieve their dreams of studying at top universities worldwide.
             </p>

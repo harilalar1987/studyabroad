@@ -7,19 +7,19 @@
       "name": "University of Toronto",
       "course": "Computer Science (BSc)",
       "description": "One of the world's top-ranked computer science programs with cutting-edge research in AI and machine learning.",
-      "pdfFile": "university-of-toronto-cs.pdf"
+      "pdfFile": ""
     },
     {
       "name": "University of British Columbia",
       "course": "Business Administration (BBA)",
       "description": "UBC's Sauder School of Business offers a globally recognized business program with strong industry connections.",
-      "pdfFile": "ubc-business.pdf"
+      "pdfFile": ""
     },
     {
       "name": "McGill University",
       "course": "Medicine (MD)",
       "description": "McGill's Faculty of Medicine is internationally renowned for its research excellence and clinical training.",
-      "pdfFile": "mcgill-medicine.pdf"
+      "pdfFile": ""
     }
   ]
 }

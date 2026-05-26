@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
-import { NAV_LINKS, SITE_NAME, CONTACT_EMAIL, WHATSAPP_URL } from '../../utils/constants'
+import { NAV_LINKS, CONTACT_EMAIL, WHATSAPP_URL } from '../../utils/constants'
+
+const LOGO_PATH = import.meta.env.BASE_URL + 'MAIN%20LOGO.jpeg'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -28,17 +30,17 @@ export default function Navbar() {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white/95 backdrop-blur-md shadow-lg'
-          : 'bg-transparent'
+          : 'bg-gradient-to-b from-navy/70 via-navy/40 to-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <Link to="/" className="flex items-center gap-2 group">
-            <span className={`text-2xl font-changa transition-colors duration-300 ${
-              scrolled ? 'text-navy' : 'text-white'
-            }`}>
-              {SITE_NAME}
-            </span>
+          <Link to="/" className="flex items-center shrink-0">
+            <img
+              src={LOGO_PATH}
+              alt="Altius Study Abroad"
+              className="h-9 lg:h-11 w-auto transition-all duration-300"
+            />
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
