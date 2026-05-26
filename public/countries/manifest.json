@@ -1,0 +1,14 @@
+{
+  "countries": [
+    {
+      "slug": "canada",
+      "name": "Canada",
+      "description": "Canada is one of the world's top study destinations, known for its high-quality education, diverse culture, and excellent post-study work opportunities. With world-class universities, affordable tuition, and a welcoming environment, Canada offers international students a pathway to global careers."
+    },
+    {
+      "slug": "uk",
+      "name": "United Kingdom",
+      "description": "The United Kingdom is home to some of the world's oldest and most prestigious universities. With a rich academic tradition, diverse culture, and globally recognized degrees, the UK offers international students an unparalleled educational experience and strong career prospects."
+    }
+  ]
+}

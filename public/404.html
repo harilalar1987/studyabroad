@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Altius Study Abroad</title>
+  <script>
+    // Redirect to the main page with the original path preserved as a hash route
+    // This handles GitHub Pages 404 fallback for SPAs
+    (function() {
+      var path = window.location.pathname;
+      var base = '/studyabroad/';
+      // Remove the base path if present
+      if (path.indexOf(base) === 0) {
+        path = path.slice(base.length);
+      }
+      // Remove leading slash
+      if (path.charAt(0) === '/') {
+        path = path.slice(1);
+      }
+      var hash = path ? '#/' + path : '#/';
+      if (window.location.search) {
+        hash += window.location.search;
+      }
+      window.location.replace(base + hash);
+    })();
+  </script>
+</head>
+<body>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=/studyabroad/#/" />
+  </noscript>
+</body>
+</html>
