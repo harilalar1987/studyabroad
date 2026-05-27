@@ -2,7 +2,7 @@ import type { NavLink, Highlight, FeatureCard } from '../types'
 
 export const SITE_NAME = 'Altius Study Abroad'
 export const SITE_TAGLINE = 'Your Trusted Partner for Global Education'
-export const BASE_PATH = '/'
+export const BASE_PATH = '/studyabroad/'
 export const CONTACT_EMAIL = 'altiusprofessionals@gmail.com'
 export const CONTACT_WHATSAPP = '+918138970654'
 export const WHATSAPP_URL = 'https://wa.me/918138970654'
