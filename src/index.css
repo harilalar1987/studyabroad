@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply text-gray-700 bg-white;
+    @apply text-gray-300 bg-navy-950;
   }
 
   ::selection {

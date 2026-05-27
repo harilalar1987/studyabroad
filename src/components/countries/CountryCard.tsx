@@ -22,9 +22,9 @@ export default function CountryCard({ country, index }: Props) {
     >
       <Link
         to={`/countries/${country.slug}`}
-        className="group block bg-white rounded-2xl overflow-hidden shadow-card border border-gray-100 hover:-translate-y-2 hover:shadow-card-hover transition-all duration-300"
+        className="group block bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:-translate-y-2 hover:border-sky-400/30 transition-all duration-300"
       >
-        <div className="aspect-[4/3] bg-gradient-to-br from-navy-800 to-navy flex items-center justify-center relative overflow-hidden">
+        <div className="aspect-[4/3] bg-gradient-to-br from-navy to-navy-800 flex items-center justify-center relative overflow-hidden">
           {!imgError ? (
             <img
               src={paths.flag}
@@ -34,16 +34,16 @@ export default function CountryCard({ country, index }: Props) {
               onError={() => setImgError(true)}
             />
           ) : (
-            <span className="text-5xl font-changa text-white/70">{country.name.charAt(0)}</span>
+            <span className="text-5xl font-changa text-white/40">{country.name.charAt(0)}</span>
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
         </div>
         <div className="p-5">
-          <h3 className="text-lg font-bold text-navy group-hover:text-sky-500 transition-colors">
+          <h3 className="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">
             {country.name}
           </h3>
           {country.description && (
-            <p className="text-sm text-gray-500 mt-1 line-clamp-2">{country.description}</p>
+            <p className="text-sm text-gray-400 mt-1 line-clamp-2">{country.description}</p>
           )}
           <span className="inline-flex items-center gap-1 text-xs font-medium text-sky-400 mt-3 group-hover:gap-2 transition-all">
             View Universities

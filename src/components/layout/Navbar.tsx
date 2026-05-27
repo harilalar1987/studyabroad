@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
-import { NAV_LINKS, CONTACT_EMAIL, WHATSAPP_URL } from '../../utils/constants'
+import { NAV_LINKS } from '../../utils/constants'
 
 const LOGO_PATH = import.meta.env.BASE_URL + 'MAIN%20LOGO.jpeg'
 
@@ -29,7 +29,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg'
+          ? 'bg-navy-950/95 backdrop-blur-md shadow-lg shadow-black/30'
           : 'bg-gradient-to-b from-navy/70 via-navy/40 to-transparent'
       }`}
     >
@@ -48,9 +48,7 @@ export default function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative text-sm font-medium transition-colors duration-300 h-16 flex items-center ${
-                  scrolled ? 'text-gray-700 hover:text-navy' : 'text-white/90 hover:text-white'
-                }`}
+                className="relative text-sm font-medium transition-colors duration-300 h-16 flex items-center text-white/90 hover:text-white"
               >
                 {link.label}
                 {isActive(link.path) && (
@@ -63,27 +61,6 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="hidden lg:flex items-center gap-3">
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
-              className={`text-sm font-medium px-5 py-2 rounded-full border transition-all duration-300 ${
-                scrolled
-                  ? 'border-navy text-navy hover:bg-navy hover:text-white'
-                  : 'border-white/60 text-white hover:bg-white hover:text-navy'
-              }`}
-            >
-              Contact Us
-            </a>
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-medium px-5 py-2 rounded-full bg-sky-400 text-white hover:bg-sky-500 transition-all duration-300 shadow-md shadow-sky-400/25"
-            >
-              WhatsApp
-            </a>
-          </div>
-
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="lg:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-1.5"
@@ -91,21 +68,15 @@ export default function Navbar() {
           >
             <motion.span
               animate={mobileOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-              className={`block w-6 h-0.5 rounded transition-colors ${
-                scrolled ? 'bg-navy' : 'bg-white'
-              }`}
+              className="block w-6 h-0.5 rounded bg-white"
             />
             <motion.span
               animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }}
-              className={`block w-6 h-0.5 rounded transition-colors ${
-                scrolled ? 'bg-navy' : 'bg-white'
-              }`}
+              className="block w-6 h-0.5 rounded bg-white"
             />
             <motion.span
               animate={mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-              className={`block w-6 h-0.5 rounded transition-colors ${
-                scrolled ? 'bg-navy' : 'bg-white'
-              }`}
+              className="block w-6 h-0.5 rounded bg-white"
             />
           </button>
         </div>
@@ -118,7 +89,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-white border-t border-gray-100 shadow-xl overflow-hidden"
+            className="lg:hidden bg-navy-950 border-t border-white/10 shadow-xl overflow-hidden"
           >
             <div className="px-4 py-4 space-y-1">
               {NAV_LINKS.map((link) => (
@@ -127,29 +98,13 @@ export default function Navbar() {
                   to={link.path}
                   className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors ${
                     isActive(link.path)
-                      ? 'bg-navy/5 text-navy'
-                      : 'text-gray-700 hover:bg-gray-50'
+                      ? 'bg-sky-400/10 text-sky-400'
+                      : 'text-gray-300 hover:bg-white/10'
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-3 flex flex-col gap-2">
-                <a
-                  href={`mailto:${CONTACT_EMAIL}`}
-                  className="block text-center px-4 py-3 rounded-full border-2 border-navy text-navy font-medium hover:bg-navy hover:text-white transition-colors"
-                >
-                  Contact Us
-                </a>
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center px-4 py-3 rounded-full bg-sky-400 text-white font-medium hover:bg-sky-500 transition-colors"
-                >
-                  Chat on WhatsApp
-                </a>
-              </div>
             </div>
           </motion.div>
         )}

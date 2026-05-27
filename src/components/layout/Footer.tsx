@@ -1,16 +1,8 @@
 import { Link } from 'react-router-dom'
 import { SITE_NAME, SITE_TAGLINE, CONTACT_EMAIL, CONTACT_WHATSAPP, WHATSAPP_URL, MAILTO_URL, NAV_LINKS } from '../../utils/constants'
+import { useCountries } from '../../hooks/useCountries'
 
 const LOGO_PATH = import.meta.env.BASE_URL + 'MAIN%20LOGO.jpeg'
-
-const DESTINATIONS = [
-  { name: 'Canada', slug: 'canada' },
-  { name: 'United Kingdom', slug: 'uk' },
-  { name: 'United States', slug: 'usa' },
-  { name: 'Australia', slug: 'australia' },
-  { name: 'Ireland', slug: 'ireland' },
-  { name: 'Germany', slug: 'germany' },
-]
 
 const SOCIALS = [
   { label: 'Instagram', href: '#', icon: InstagramIcon },
@@ -20,6 +12,8 @@ const SOCIALS = [
 ]
 
 export default function Footer() {
+  const { countries } = useCountries()
+
   return (
     <footer className="bg-navy-950 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -72,7 +66,7 @@ export default function Footer() {
               Study Destinations
             </h4>
             <ul className="space-y-2.5">
-              {DESTINATIONS.map((dest) => (
+              {countries.slice(0, 6).map((dest) => (
                 <li key={dest.slug}>
                   <Link
                     to={`/countries/${dest.slug}`}
@@ -82,6 +76,9 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              {countries.length === 0 && (
+                <li className="text-sm text-gray-500">Destinations coming soon</li>
+              )}
             </ul>
           </div>
 

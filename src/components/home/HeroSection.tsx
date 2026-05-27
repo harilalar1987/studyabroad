@@ -91,7 +91,7 @@ export default function HeroSection() {
                 ))}
               </div>
               <span className="text-gray-400 text-sm">
-                Trusted by <strong className="text-white">500+</strong> students worldwide
+                Trusted by students worldwide
               </span>
             </motion.div>
           </motion.div>

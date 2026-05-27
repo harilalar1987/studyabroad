@@ -12,14 +12,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
   { label: 'Countries', path: '/countries' },
-  { label: 'Contact Us', path: '/#contact' },
-]
-
-export const HIGHLIGHTS: Highlight[] = [
-  { value: 500, suffix: '+', label: 'Students Placed' },
-  { value: 50, suffix: '+', label: 'Partner Universities' },
-  { value: 98, suffix: '%', label: 'Visa Success Rate' },
-  { value: 10, suffix: '+', label: 'Countries' },
+  { label: 'Contact Us', path: '/contact' },
 ]
 
 export const WHY_CHOOSE_US: FeatureCard[] = [
@@ -59,3 +52,8 @@ export const PARTNER_LOGOS: string[] = Array.from(
   { length: 20 },
   (_, i) => `university-${i + 1}.png`
 )
+
+export const HIGHLIGHTS: Highlight[] = [
+  { value: PARTNER_LOGOS.length, suffix: '+', label: 'Partner Universities' },
+  { value: 98, suffix: '%', label: 'Visa Success Rate' },
+]

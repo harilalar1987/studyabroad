@@ -10,11 +10,11 @@ interface Props {
 
 function SkeletonCard() {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-card border border-gray-100 animate-pulse">
-      <div className="aspect-[4/3] bg-gray-200" />
+    <div className="bg-white/5 rounded-2xl overflow-hidden border border-white/10 animate-pulse">
+      <div className="aspect-[4/3] bg-white/10" />
       <div className="p-5 space-y-3">
-        <div className="h-5 bg-gray-200 rounded w-2/3" />
-        <div className="h-3 bg-gray-100 rounded w-full" />
+        <div className="h-5 bg-white/10 rounded w-2/3" />
+        <div className="h-3 bg-white/10 rounded w-full" />
       </div>
     </div>
   )
@@ -35,11 +35,11 @@ export default function CountryGrid({ countries, loading, error }: Props) {
     return (
       <div className="text-center py-20">
         <span className="text-5xl mb-4 block">&#9888;</span>
-        <h3 className="text-xl font-bold text-navy mb-2">Unable to Load Countries</h3>
-        <p className="text-gray-500 mb-6">{error}</p>
+        <h3 className="text-xl font-bold text-white mb-2">Unable to Load Countries</h3>
+        <p className="text-gray-400 mb-6">{error}</p>
         <button
           onClick={() => window.location.reload()}
-          className="px-6 py-2.5 rounded-full bg-navy text-white font-medium hover:bg-navy-800 transition-colors"
+          className="px-6 py-2.5 rounded-full bg-sky-400 text-navy font-medium hover:bg-sky-500 transition-colors"
         >
           Try Again
         </button>
@@ -51,13 +51,13 @@ export default function CountryGrid({ countries, loading, error }: Props) {
     return (
       <div className="text-center py-20">
         <span className="text-6xl mb-4 block">&#127758;</span>
-        <h3 className="text-xl font-bold text-navy mb-2">No Destinations Listed</h3>
-        <p className="text-gray-500 mb-6 max-w-md mx-auto">
+        <h3 className="text-xl font-bold text-white mb-2">No Destinations Listed</h3>
+        <p className="text-gray-400 mb-6 max-w-md mx-auto">
           We&apos;re currently updating our destination list. Check back soon or contact us for personalized guidance.
         </p>
         <Link
           to="/#contact"
-          className="px-6 py-2.5 rounded-full bg-navy text-white font-medium hover:bg-navy-800 transition-colors inline-block"
+          className="px-6 py-2.5 rounded-full bg-sky-400 text-navy font-medium hover:bg-sky-500 transition-colors inline-block"
         >
           Contact Us
         </Link>

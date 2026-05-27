@@ -36,7 +36,7 @@ export default function CountryFlagsCarousel() {
             }}
           />
         </div>
-        <span className="text-xs font-medium text-gray-600 group-hover:text-navy transition-colors">
+        <span className="text-xs font-medium text-gray-400 group-hover:text-sky-400 transition-colors">
           {country.name}
         </span>
       </Link>
@@ -44,9 +44,9 @@ export default function CountryFlagsCarousel() {
   })
 
   return (
-    <section className="py-12 bg-white overflow-hidden">
+    <section className="py-12 bg-navy-950 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-        <SectionHeading title="Explore Destinations" subtitle="Find your perfect study destination" />
+        <SectionHeading title="Explore Destinations" subtitle="Find your perfect study destination" light />
       </div>
       <Carousel items={items} direction="left" duration={40} />
     </section>
