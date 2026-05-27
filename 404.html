@@ -7,7 +7,10 @@
   <script>
     (function() {
       var path = window.location.pathname;
-      // Remove leading slash
+      var base = '/studyabroad/';
+      if (path.indexOf(base) === 0) {
+        path = path.slice(base.length);
+      }
       if (path.charAt(0) === '/') {
         path = path.slice(1);
       }
@@ -15,13 +18,13 @@
       if (window.location.search) {
         hash += window.location.search;
       }
-      window.location.replace('/' + hash);
+      window.location.replace(base + hash);
     })();
   </script>
 </head>
 <body>
   <noscript>
-    <meta http-equiv="refresh" content="0;url=/#/" />
+    <meta http-equiv="refresh" content="0;url=/studyabroad/#/" />
   </noscript>
 </body>
 </html>
